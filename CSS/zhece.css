@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+li {
+    list-style: none;
+}
+/* all */
+#all{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* 头部*/
+#header {
+    width: 980px;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color:#fff;
+ }
+ .name {
+     width: 120px;
+     height: 40px;
+     color: black;
+     font-size: 40px;
+     font-weight: 700;
+ }
+ .header-right {
+     width: 120px;
+     height: 23px;
+     display: flex;
+     justify-content: space-between;
+     cursor: pointer;
+     margin-right: 10px
+ }
+/*body*/
+#bodys{
+    width: 980px;
+    height: 530px;
+    margin: 0 auto;
+    border-top:1px solid #e0e0e0;
+    border-bottom:1px solid #e0e0e0;
+}
+.textlist{
+    margin: 0 auto;
+    width: 720px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.textlist ul{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+#zhuce{
+    width: 54px;
+    height: 28px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}
+/* foot*/
+#end{
+   /*  background-color:blueviolet; */
+    width: 1440px;
+    height: 470px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.end-left{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.end-left li{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.end-center{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.end-center li{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.end-span{
+    display: flex;
+    flex-direction: column;
+    color: #757575;
+}
+.end-center .end-span li{
+    display: flex;
+    justify-content: flex-start;
+}
+.end-right{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.end-right li{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.sousu {
+    width: 325px;
+    height: 60px;
+    border:1px solid black;
+    border-radius: 28px 30px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+.storetext{
+    outline-style: none;
+    border:none;
+    font-size: 20px;
+    text-align: center;
+}
+#sousu-fdj{
+    font-size: 20px;
+    width: 90px;
+    height: 100%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+}
