@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DIOR</title>
+    <link rel="stylesheet" href="../font_p5j81dn6id/iconfont.css">
+    <link rel="stylesheet" href="../CSS/start.css">
+    <link rel="stylesheet" href="../font_i189t9i9pjm/iconfont.css"><!-- 放大镜 -->
+    <link rel="stylesheet" href="../font_r1mmu7y04w/iconfont.css">
+    <link rel="stylesheet" href="../font_nbapivdvrwb/iconfont.css">
+    <link rel="stylesheet" href="../font_e82npflcjng/iconfont.css">
+    <script src="../JS/jquery.min.js"></script>
+</head>
+
+<body style="height: auto; width: auto; overflow: auto;">
+    <!-- 头部区域 -->
+    <div id="header">
+        <!-- 搜索框 -->
+        <div class="header-left">
+            <input type="text" class="header-inp" placeholder="在dior上搜索">
+            <span class="iconfont icon-sousuo fdj"></span>
+        </div>
+        <!-- 品牌名字 -->
+        <div class="header-center">
+            <a href="" style="text-decoration: none">
+                <span class="name"> DIOR</span>
+            </a>
+        </div>
+        <div class="header-right">
+            <span class="iconfont icon-aixin" style="height:23px;font-size: 24px;"></span>
+            <main>
+                <span class="iconfont icon-yonghu" style="height:23px;font-size: 24px;"></span>
+                <div class="User2" style="display: none;">
+                    <span class="iconfont icon-duigou" id="true" style="display: none;"></span>
+                </div>
+            </main>
+            <main>
+                <span class="iconfont icon-gouwudai" style="height:23px;font-size: 24px;" id="Shop"></span>
+                <div class="shop">1</div>
+            </main>
+        </div>
+    </div>
+    <!-- 导航 -->
+    <div id="second">
+        <ul class="shoplist">
+            <li class="sort"> <a href="http://192.168.1.102/dior/index/liebiao.html"><span>女士精品</span>
+                </a></li>
+            <li class="sort"> <a href="http://192.168.1.102/dior/index/liebiao.html"><span>男士精品</span> </a> </li>
+            <li class="sort"> <a href="http://192.168.1.102/dior/index/liebiao.html"><span>香氛</span> </a></li>
+            <li class="sort"> <a href="http://192.168.1.102/dior/index/liebiao.html"><span>彩妆 </span> </a> </li>
+            <li class="sort"> <a href="http://192.168.1.102/dior/index/liebiao.html"><span>护肤 </span> </a> </li>
+            <li class="sort"> <a href="http://192.168.1.102/dior/index/liebiao.html"><span>童装精品</span> </a> </li>
+            <li class="sort"> <a href="http://192.168.1.102/dior/index/liebiao.html"><span>家居 </span> </a> </li>
+            <li class="sort"> <a href="http://192.168.1.102/dior/index/liebiao.html"><span> 臻选之礼 </span></a> </li>
+            <li class="sort"> <a href="http://192.168.1.102/dior/index/liebiao.html"><span>邂逅迪奥 & 精湛工艺</span> </a> </li>
+        </ul>
+    </div>
+    <!-- 二级导航 -->
+    <div id="secondlist">
+        <ul>
+            <li>皮具系列</li>
+            <li>手袋</li>
+            <li>托特包</li>
+            <li>迷你手袋</li>
+            <li>信使包</li>
+            <li>Dior Caro</li>
+            <li>Lady Dior</li>
+            <li>Saddle</li>
+        </ul>
+        <ul>
+            <li>高级成衣</li>
+            <li>外套</li>
+            <li>连衣裙</li>
+            <li>半身裙</li>
+            <li>衬衫</li>
+            <li>长裤</li>
+            <li>针织衫</li>
+            <li>牛仔系列</li>
+        </ul>
+        <ul>
+            <li>鞋履系列</li>
+            <li>外套</li>
+            <li>连衣裙</li>
+            <li>半身裙</li>
+            <li>衬衫</li>
+            <li>长裤</li>
+            <li>针织衫</li>
+            <li>牛仔系列</li>
+        </ul>
+        <ul>
+            <li>时尚首饰</li>
+            <li>外套</li>
+            <li>连衣裙</li>
+            <li>半身裙</li>
+            <li>衬衫</li>
+            <li>长裤</li>
+            <li>针织衫</li>
+            <li>牛仔系列</li>
+        </ul>
+        <ul>
+            <li>配饰系列</li>
+            <li>外套</li>
+            <li>连衣裙</li>
+            <li>半身裙</li>
+            <li>衬衫</li>
+            <li>长裤</li>
+            <li>针织衫</li>
+            <li>牛仔系列</li>
+        </ul>
+        <ul>
+            <li>高级珠宝</li>
+            <li>外套</li>
+            <li>连衣裙</li>
+            <li>半身裙</li>
+            <li>衬衫</li>
+            <li>长裤</li>
+            <li>针织衫</li>
+            <li>牛仔系列</li>
+        </ul>
+        <ul>
+            <li>成衣系列发布秀</li>
+            <li>外套</li>
+            <li>连衣裙</li>
+            <li>半身裙</li>
+            <li>衬衫</li>
+            <li>长裤</li>
+            <li>针织衫</li>
+            <li>牛仔系列</li>
+        </ul>
+    </div>
+    <!-- 第一个轮播图 -->
+    <div id="box">
+        <div id="images">
+            <ul class="imgs">
+                <li class="show"><img src="../images/lunbo1.jpg" alt=""></li>
+                <li><img src="../images/lunbo2.jpg" alt=""></li>
+                <li><img src="../images/lunbo3.jpg" alt=""></li>
+                <li><img src="../images/lunbo4.jpg" alt=""></li>
+            </ul>
+            <span id="prev" class="iconfont icon-zuojiantou "></span>
+            <span id="next" class="iconfont icon-youjiantou "></span>
+
+        </div>
+        <!-- 自动生成小圆点 -->
+        <ul id="dotwrap"></ul>
+        <div id="box1">
+            <div class="text">香氛与美妆</div>
+            <div class="shopname">DIOR迪奥花漾星年</div>
+            <div class="shoping">
+                <span class="iconfont icon-gouwudai" id="buy">
+                    <span class="buy1">立即购买</span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- 第二个轮播图 -->
+    <div id="jingxuan">
+        <div id="box2">
+            <div class="selection-date">
+                <div class="day">21</div>
+                <div class="border"></div>
+                <div class="month">一月</div>
+            </div>
+            <h2>
+                <div class="shoptext">精选</div>
+            </h2>
+            <div id="imgbox">
+                <div class="shopleft">
+                    <img src="../images/img1.jpg" alt="">
+                    <span class="flex1">
+                        <p>#限量版</p>
+                        <p>#新品</p>
+                    </span>
+                    <span class="flex2">全新 迪奥锁妆气垫*DIORMANIA金色限量版</span>
+                    <span class="flex3">超轻薄 超遮瑕 超水润 超长持妆 柔雾哑光妆效 超纤薄外盒 饰以浮雕高订经典花纹</span>
+                    <span class="flex4">¥640</span>
+                    <div class="spanbox">
+                        <span class="iconfont icon-gouwudai" id="flex5">
+                            <span>立即购买</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="shopcenter">
+                    <img src="../images/img2.jpg" alt="">
+                    <span class="flex1">
+                        <p>#限量版</p>
+                        <p>#新品</p>
+                    </span>
+                    <span class="flex2">全新 迪奥锁妆气垫*DIORMANIA金色限量版</span>
+                    <span class="flex3">超轻薄 超遮瑕 超水润 超长持妆 柔雾哑光妆效 超纤薄外盒 饰以浮雕高订经典花纹</span>
+                    <span class="flex4">¥640</span>
+                    <div class="spanbox">
+                        <span class="iconfont icon-gouwudai" id="flex5">
+                            <span>立即购买</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="shopright">
+                    <img src="../images/img3.jpg" alt="">
+                    <span class="flex1">
+                        <p>#限量版</p>
+                        <p>#新品</p>
+                    </span>
+                    <span class="flex2">全新 迪奥锁妆气垫*DIORMANIA金色限量版</span>
+                    <span class="flex3">超轻薄 超遮瑕 超水润 超长持妆 柔雾哑光妆效 超纤薄外盒 饰以浮雕高订经典花纹</span>
+                    <span class="flex4">¥640</span>
+                    <div class="spanbox">
+                        <span class="iconfont icon-gouwudai" id="flex5">
+                            <span>立即购买</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- 第二页 -->
+                <!--   <div class="shopleft">
+                    <img src="../images/img1.jpg" alt="">
+                    <span class="flex1">
+                        <p>#限量版</p>
+                        <p>#新品</p>
+                    </span>
+                    <span class="flex2">全新 迪奥锁妆气垫*DIORMANIA金色限量版</span>
+                    <span class="flex3">超轻薄 超遮瑕 超水润 超长持妆 柔雾哑光妆效 超纤薄外盒 饰以浮雕高订经典花纹</span>
+                    <span class="flex4">¥640</span>
+                    <div class="spanbox">
+                        <span class="iconfont icon-gouwudai" id="flex5">
+                            <span>立即购买</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="shopcenter">
+                    <img src="../images/img2.jpg" alt="">
+                    <span class="flex1">
+                        <p>#限量版</p>
+                        <p>#新品</p>
+                    </span>
+                    <span class="flex2">全新 迪奥锁妆气垫*DIORMANIA金色限量版</span>
+                    <span class="flex3">超轻薄 超遮瑕 超水润 超长持妆 柔雾哑光妆效 超纤薄外盒 饰以浮雕高订经典花纹</span>
+                    <span class="flex4">¥640</span>
+                    <div class="spanbox">
+                        <span class="iconfont icon-gouwudai" id="flex5">
+                            <span>立即购买</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="shopright">
+                    <img src="../images/img3.jpg" alt="">
+                    <span class="flex1">
+                        <p>#限量版</p>
+                        <p>#新品</p>
+                    </span>
+                    <span class="flex2">全新 迪奥锁妆气垫*DIORMANIA金色限量版</span>
+                    <span class="flex3">超轻薄 超遮瑕 超水润 超长持妆 柔雾哑光妆效 超纤薄外盒 饰以浮雕高订经典花纹</span>
+                    <span class="flex4">¥640</span>
+                    <div class="spanbox">
+                        <span class="iconfont icon-gouwudai" id="flex5">
+                            <span>立即购买</span>
+                        </span>
+                    </div>
+                </div> -->
+            </div>
+
+        </div>
+        <span id="prev2" class="iconfont icon-zuojiantou "></span>
+        <span id="next2" class="iconfont icon-youjiantou "></span>
+    </div>
+    <!-- 女士栏 -->
+    <div id="woman">
+        <div class="sex">
+            <p>女士</p>
+        </div>
+        <div class="sextext">
+            <p>从标志性杰作到最新作品，探索Dior迪奥演绎的妩媚魅力</p>
+        </div>
+        <div class="womancenter">
+            <ul>
+                <li><img src="../images/迪奥_03.gif" alt=""></li>
+                <li><img src="../images/迪奥_04.gif" alt=""></li>
+                <li><img src="../images/迪奥_05.gif" alt=""></li>
+            </ul>
+            <span>
+                <p>迪奥中国新年限定系列</p>
+            </span>
+        </div>
+        <div class="womanfoot">
+            <ul>
+                <li><img src="../images/迪奥_08.gif" alt="">
+                    <p>全新 迪奥烈艳蓝金唇膏</p>
+                </li>
+                <li><img src="../images/迪奥_10.gif" alt="">
+                    <p>全新 迪奥烈艳蓝金唇膏</p>
+                </li>
+                <li><img src="../images/迪奥_12.gif" alt="">
+                    <p>手提包</p>
+                </li>
+                <li><img src="../images/迪奥_14.gif" alt="">
+                    <p>首饰</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 男士栏 -->
+    <div id="man">
+        <div class="sex">
+            <p>男士</p>
+        </div>
+        <div class="sextext">
+            <p>从标志性杰作到最新作品，探索Dior迪奥演绎的妩媚魅力</p>
+        </div>
+        <div class="mancenter">
+            <ul>
+                <li><img src="../images/images/man_03.gif" alt=""></li>
+                <li><img src="../images/images/man_05.gif" alt=""></li>
+                <li><img src="../images/images/man_06.gif" alt=""></li>
+            </ul>
+            <span>
+                <p>DIOR AND SHAWN 系列</p>
+            </span>
+        </div>
+        <div class="manfoot">
+            <ul>
+                <li>
+                    <img src="../images/images/man_10.gif" alt="">
+                    <p>成衣</p>
+                </li>
+                <li><img src="../images/images/man_12.gif" alt="">
+                    <p>配饰</p>
+                </li>
+                <li><img src="../images/images/man_14.gif" alt="">
+                    <p>男士香氛系列</p>
+                </li>
+                <li><img src="../images/images/man_16.gif" alt="">
+                    <p>醇柔木香，优雅阳刚</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 儿童栏 -->
+    <div id="child">
+        <div class="sex">
+            <p>童装</p>
+        </div>
+        <div class="sextext">
+            <p>从标志性杰作到最新作品，探索Dior迪奥演绎的妩媚魅力</p>
+        </div>
+        <div class="childcenter">
+            <ul>
+                <li><img src="../images/images/child_03.gif" alt=""></li>
+                <li><img src="../images/images/child_04.gif" alt=""></li>
+                <li><img src="../images/images/child_05.gif" alt=""></li>
+            </ul>
+            <span>
+                <p>春节限定系列</p>
+            </span>
+        </div>
+        <div class="childfoot">
+            <ul>
+                <li>
+                    <img src="../images/images/child_08.gif" alt="">
+                    <p>女童</p>
+                </li>
+                <li><img src="../images/images/child_10.gif" alt="">
+                    <p>男童</p>
+                </li>
+                <li><img src="../images/images/child_12.gif" alt="">
+                    <p>女婴</p>
+                </li>
+                <li><img src="../images/images/child_14.gif" alt="">
+                    <p>男婴</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 精品店搜索栏 -->
+    <div id="store">
+        <img src="../images/STORE.jpg" alt="">
+        <div id="storelist">
+            <h2>精品店</h2>
+            <span class="sousu">
+                <input type="text" placeholder="城市、邮编、国家/地区" class="storetext">
+                <span class="iconfont icon-sousuo" id="sousu-fdj"></span>
+            </span>
+        </div>
+    </div>
+    </div>
+    <!-- 专享服务栏 -->
+    <div id="member">
+        <span class="bg"></span>
+        <div class="memberbox">
+            <span class="title">
+                <p>DIOR迪奥线上精品店专项服务</p>
+            </span>
+            <span class="fuwu">
+                <ul>
+                    <li class="iconfont icon-fanhui" id="tubiao"></li>
+                    <li>免费配送</li>
+                    <li style="font-size: 16px;">所有订单均享免费顺丰速递</li>
+                </ul>
+                <ul>
+                    <li class="iconfont icon-wuliupeisong-" id="tubiao"></li>
+                    <li>7天无理由退货</li>
+                    <li style="font-size: 16px;">非定制商品订单自签收日起7天内可享无理由退货</li>
+                </ul>
+                <ul>
+                    <li class="iconfont icon-huaban-" id="tubiao"></li>
+                    <li>艺术包装</li>
+                    <li style="font-size: 16px;">您的订单将尊享Dior迪奥艺术包装并随附个性化定制祝福</li>
+                </ul>
+            </span>
+        </div>
+    </div>
+    <!-- foot -->
+    <div id="end">
+        <ul class="end-left">
+            <li>电子通讯</li>
+            <li>立即订阅，掌握迪奥最新动态资讯</li>
+            <span class="sousu">
+                <input type="text" placeholder="输入您的邮箱" class="storetext">
+                <span id="sousu-fdj">确定</span>
+            </span>
+        </ul>
+        <ul class="end-center">
+            <li>联系</li>
+            <li>配送及退货</li>
+            <li>常见问题</li>
+            <li>一般销售条件</li>
+            <li>使用条款</li>
+            <li>数据保护章程</li>
+            <span class="end-span">
+                <li>
+                    <img src="../images/china-3.png" alt="">
+                    电子营业执照
+                </li>
+                <li>
+                    <img src="../images/china-0.png" alt="">
+                    沪公网安备3101060200034号
+                </li>
+                <li>
+                    <img src="../images/china-1.png" alt="">
+                    沪ICP备19005922号
+                </li>
+                <li>尚圃电子商务（上海）有限公司</li>
+                <li>上海市南京西路1266号恒隆广场1期29F </li>
+            </span>
+        </ul>
+        <ul class="end-right">
+            <li>关注我们</li>
+            <li>
+                <img src="../images/images/图标_03.gif" alt="">
+                <img src="../images/images/图标_05.gif" alt="">
+            </li>
+            <li>国家/地区</li>
+            <span class="sousu">
+                <input type="text" placeholder="请输入您的国家或地区" class="storetext">
+                <span id="sousu-fdj">确定</span>
+            </span>
+        </ul>
+    </div>
+</body>
+<script src="../JS/lunbo.js"></script>
+<script>
+    /* 二级导航 */
+    let second = document.getElementsByClassName("sort")
+    let secondlist = document.getElementById("secondlist")
+    let liList = document.querySelectorAll(".sort")
+    console.log(lilist)
+    for (let i = 0; i < second.length; i++) {
+        second[i].onmouseenter = function () {
+            secondlist.style.display = "flex"
+        }
+        secondlist.onmouseleave = function () {
+            secondlist.style.display = "none"
+        }
+    }
+    /* 用户登录跳转 */
+    $("#User").click(function () {
+        location.href = "http://192.168.1.102/dior/index/login.html"
+    })
+    /* 购物车跳转 */
+    $("#Shop").click(function () {
+        location.href = "http://192.168.1.102/dior/index/shopping cart.html"
+    })
+    let imglist = document.getElementsByTagName("img")
+    console.log(imglist)
+    for (let i = 0; i < imglist.length; i++) {
+        imglist[i].onclick = function () {
+            location.href = "http://192.168.1.102/dior/index/xiangqing.html"
+        }
+    }
+    /* 检测用户是否登录 */
+    let str = window.sessionStorage;
+    let a = str.getItem("username");
+    if (a) {
+        console.log($(".User"))
+        $(".User2").css("display", "flex")
+        $(".User2").css({
+            "background-color": "#000",
+            " width": "15px",
+            "height": "15px",
+            "line-height": "15px",
+            "border-radius": "50%",
+            "color": "#fff",
+            "font-size": "9px",
+            "text-align": "center",
+            "position": "absolute",
+            "top":"0px",
+            "right":"-10px",
+            "padding":"0 .125rem",
+        })
+        $("#true").css("display", "block")
+    }
+</script>
+
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="../font_p5j81dn6id/iconfont.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../font_i189t9i9pjm/iconfont.css"><!-- 放大镜 -->
+    <link rel="stylesheet" href="../font_r1mmu7y04w/iconfont.css">
+    <link rel="stylesheet" href="../font_nbapivdvrwb/iconfont.css">
+    <link rel="stylesheet" href="../font_e82npflcjng/iconfont.css">
+    <script src="../JS/jquery.min.js"></script>
+</head>
+
+<body style="height: auto; width: auto; overflow: auto;">
+    <div id="all">
+        <!-- 头部 -->
+        <div id="header">
+            <!--  左箭头 -->
+            <span id="prev" class="iconfont icon-zuojiantou "></span>
+            <!-- 品牌名字 -->
+            <div class="header-center">
+                <a href="" style="text-decoration: none">
+                    <span class="name">DIOR</span>
+                </a>
+            </div>
+            <div class="header-right">
+                <span class="iconfont icon-aixin" style="height:23px;font-size: 23px;"></span>
+                <main>
+                    <span class="iconfont icon-yonghu" style="height:23px;font-size: 23px"></span>
+                </main>
+                <main>
+                    <span class="iconfont icon-gouwudai" style="height:23px;font-size: 23px"></span>
+                </main>
+            </div>
+        </div>
+        <!-- 内容区 -->
+        <div id="bodys">
+            <div class="textlist">
+                <ul class="usehead">
+                    <h1 style="color:#636363;font-size:24px,">登录或创建帐户</h1>
+                </ul>
+                <ul class="usertext">
+                    <span class="userleft">
+                        <li style="font-size: 16px;">密码登录</li>
+                        <li style="font-size: 14px;">用户名*<input type="text" placeholder="手机号/邮箱" id="username"></li>
+                        <li style="font-size: 14px;">密码*<input type="text" placeholder="密码" id="password"></li>
+                        <li><input type="checkbox" style="width: 20px;height: 20px;line-height: 20px;" class="denglu">
+                            我已阅读并接受个人信息收集声明已经网站使用和销售条款
+                        </li>
+                        <li>
+                            <span>忘记密码?</span>
+                            <button class="login" id="btn">登录</button>
+                        </li>
+                    </span>
+                    <span class="userright">
+                        <li style="font-size: 16px;">
+                            注册Dior账户
+                        </li>
+                        <li style="font-size: 14px;">
+                            注册Dior账号以便追踪您的订单，
+                            管理收货地址，获取更多个性化信息
+                        </li>
+                        <li style="font-size: 14px;" class="useend">
+                            <span class="spanname" id="newuser">
+                                创建账户
+                            </span>
+
+                        </li>
+                    </span>
+                </ul>
+                <ul class="loginend">
+                    *请妥善保管您的注册账户信息，勿将账号及密码随意泄露给他人。
+                    请注意，您的账户注册手机号为迪奥识别及验证您账户身份的唯一依据。
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="end">
+            <ul class="end-left">
+                <li>电子通讯</li>
+                <li>立即订阅，掌握迪奥最新动态资讯</li>
+                <span class="sousu">
+                    <input type="text" placeholder="输入您的邮箱" class="storetext">
+                    <span id="sousu-fdj">确定</span>
+                </span>
+            </ul>
+            <ul class="end-center">
+                <li>联系</li>
+                <li>配送及退货</li>
+                <li>常见问题</li>
+                <li>一般销售条件</li>
+                <li>使用条款</li>
+                <li>数据保护章程</li>
+                <span class="end-span">
+                    <li>
+                        <img src="../images/china-3.png" alt="">
+                        电子营业执照
+                    </li>
+                    <li>
+                        <img src="../images/china-0.png" alt="">
+                        沪公网安备3101060200034号
+                    </li>
+                    <li>
+                        <img src="../images/china-1.png" alt="">
+                        沪ICP备19005922号
+                    </li>
+                    <li>尚圃电子商务（上海）有限公司</li>
+                    <li>上海市南京西路1266号恒隆广场1期29F </li>
+                </span>
+            </ul>
+            <ul class="end-right">
+                <li>关注我们</li>
+                <li>
+                    <img src="../images/images/图标_03.gif" alt="">
+                    <img src="../images/images/图标_05.gif" alt="">
+                </li>
+                <li>国家/地区</li>
+                <span class="sousu">
+                    <input type="text" placeholder="请输入您的国家或地区" class="storetext">
+                    <span id="sousu-fdj">确定</span>
+                </span>
+            </ul>
+        </div>
+    </div>
+
+</body>
+<script>
+    /* 30天免登录 */
+    let cookie = {
+        // 写入/修改cookie
+        set(key, value, day) {
+            let d = new Date();
+            d.setDate(d.getDate() + day)
+            document.cookie = key + "=" + value + ";expires=" + d;
+        },
+        // 读取cookie
+        get(key) {
+            let arr = document.cookie.split("; ")
+            var result = {}
+            arr.forEach(item => {
+                let key = item.split("=")[0];
+                let value = item.split("=")[1];
+                result[key] = value;
+            })
+            return key ? result[key] : result;
+        },
+        // 删除cookie
+        remove(key) {
+            if (this.get(key)) {
+                document.cookie = key + "=18;expires=" + new Date('1999-09-09');
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
+    let checkedbox = $(".denglu")[0]
+    $("#btn").click(function () {
+        /* 登录发送Ajax请求 */
+        if (!$("#username").val() && !$("#password").val()) {
+            alert("请输入用户名")
+            return;
+        }
+        let http = new XMLHttpRequest()
+        http.open("get",
+            `http://192.168.1.102:8080/login?username=${$("#username").val()}&password=${$("#password").val()}`
+        )
+        http.send()
+        http.onreadystatechange = function () {
+            if (http.readyState === 4) {
+                if (http.responseText === "success") {
+                    alert("登录成功")
+                    location.href = "http://192.168.1.102/dior/index/start.html"
+                } else {
+                    alert("用户名或密码错误")
+                }
+            }
+        }
+        let str = window.sessionStorage;
+        str.setItem("username",$("#username").val());
+        if (checkedbox.checked) {
+            cookie.set("username", $("#username").val(), 30)
+            cookie.set("password", $("#password").val(), 30)
+            console.log($("#username").val())
+        }
+    })
+    if (cookie.get("username") && cookie.get("password")) {
+        $("#username")[0].value = cookie.get("username")
+        console.log($("#username")[0].value)
+        $("#password")[0].value = cookie.get("password")
+        console.log($("#username")[0].value)
+    }
+    $("#newuser").click(function () {
+        location.href = "http://192.168.1.102/dior/index/zhuce.html"
+    })
+</script>
+
+</html>

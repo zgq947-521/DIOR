@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>列表页</title>
+    <link rel="stylesheet" href="../font_p5j81dn6id/iconfont.css">
+    <link rel="stylesheet" href="../CSS/libiao.css">
+    <link rel="stylesheet" href="../font_i189t9i9pjm/iconfont.css"><!-- 放大镜 -->
+    <link rel="stylesheet" href="../font_r1mmu7y04w/iconfont.css">
+    <link rel="stylesheet" href="../font_nbapivdvrwb/iconfont.css">
+    <link rel="stylesheet" href="../font_e82npflcjng/iconfont.css">
+    <script src="../JS/jquery.min.js"></script>
+</head>
+
+<body style="height: auto; width: auto; overflow: auto;">
+    <!-- 头部区域 -->
+    <div id="header">
+        <!-- 搜索框 -->
+        <div class="header-left">
+            <input type="text" class="header-inp" placeholder="在dior上搜索">
+            <span class="iconfont icon-sousuo fdj"></span>
+        </div>
+        <!-- 品牌名字 -->
+        <div class="header-center">
+            <a href="" style="text-decoration: none">
+                <span class="name"> DIOR</span>
+            </a>
+        </div>
+        <div class="header-right">
+            <span class="iconfont icon-aixin" style="height:23px"></span>
+            <main>
+                <span class="iconfont icon-yonghu" style="height:23px"></span>
+                <div class="user">
+                    <span class="iconfont icon-duigou" id="true"></span>
+                </div>
+            </main>
+            <main>
+                <span class="iconfont icon-gouwudai" style="height:23px"></span>
+                <div class="shop">1</div>
+            </main>
+        </div>
+    </div>
+    <!-- 导航 -->
+    <div id="second">
+        <ul class="shoplist">
+            <li class="sort"> <a href=""><span>女士精品</span>
+                </a></li>
+            <li class="sort"> <a href=""><span>男士精品</span> </a> </li>
+            <li class="sort"> <a href=""><span>香氛</span> </a></li>
+            <li class="sort"> <a href=""><span>彩妆 </span> </a> </li>
+            <li class="sort"> <a href=""><span>护肤 </span> </a> </li>
+            <li class="sort"> <a href=""><span>童装精品</span> </a> </li>
+            <li class="sort"> <a href=""><span>家居 </span> </a> </li>
+            <li class="sort"> <a href=""><span> 臻选之礼 </span></a> </li>
+            <li class="sort"> <a href=""><span>邂逅迪奥 & 精湛工艺</span> </a> </li>
+        </ul>
+    </div>
+    <!-- 二级导航 -->
+    <div id="secondlist">
+        <ul>
+            <li>皮具系列</li>
+            <li>手袋</li>
+            <li>托特包</li>
+            <li>迷你手袋</li>
+            <li>信使包</li>
+            <li>Dior Caro</li>
+            <li>Lady Dior</li>
+            <li>Saddle</li>
+        </ul>
+        <ul>
+            <li>高级成衣</li>
+            <li>外套</li>
+            <li>连衣裙</li>
+            <li>半身裙</li>
+            <li>衬衫</li>
+            <li>长裤</li>
+            <li>针织衫</li>
+            <li>牛仔系列</li>
+        </ul>
+        <ul>
+            <li>鞋履系列</li>
+            <li>外套</li>
+            <li>连衣裙</li>
+            <li>半身裙</li>
+            <li>衬衫</li>
+            <li>长裤</li>
+            <li>针织衫</li>
+            <li>牛仔系列</li>
+        </ul>
+        <ul>
+            <li>时尚首饰</li>
+            <li>外套</li>
+            <li>连衣裙</li>
+            <li>半身裙</li>
+            <li>衬衫</li>
+            <li>长裤</li>
+            <li>针织衫</li>
+            <li>牛仔系列</li>
+        </ul>
+        <ul>
+            <li>配饰系列</li>
+            <li>外套</li>
+            <li>连衣裙</li>
+            <li>半身裙</li>
+            <li>衬衫</li>
+            <li>长裤</li>
+            <li>针织衫</li>
+            <li>牛仔系列</li>
+        </ul>
+        <ul>
+            <li>高级珠宝</li>
+            <li>外套</li>
+            <li>连衣裙</li>
+            <li>半身裙</li>
+            <li>衬衫</li>
+            <li>长裤</li>
+            <li>针织衫</li>
+            <li>牛仔系列</li>
+        </ul>
+        <ul>
+            <li>成衣系列发布秀</li>
+            <li>外套</li>
+            <li>连衣裙</li>
+            <li>半身裙</li>
+            <li>衬衫</li>
+            <li>长裤</li>
+            <li>针织衫</li>
+            <li>牛仔系列</li>
+        </ul>
+    </div>
+    <!-- banner区域 -->
+    <div id="box">
+        <div id="images">
+            <ul class="imgs">
+                <li class="show"><img src="../images/new.jpg" alt=""></li>
+            </ul>
+
+        </div>
+        <div id="box1">
+            <div class="text">2021 年 1 月 25 日晚上 9:30（北京时间）线上特别发布</div>
+            <div class="shopname">二零二一春夏高级订制系列</div>
+            <div class="shoping">
+                <span class="iconfont icon-gouwudai" id="buy">
+                    <span class="buy1">探索</span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- 时装与配饰 -->
+    <div id="box2">
+        <h2>
+            时装与配饰
+        </h2>
+        <div id="images2">
+            <ul class="imgs2">
+                <li class="show2"><img src="../images/lunbo2.jpg" alt=""></li>
+            </ul>
+        </div>
+        <div id="box12">
+            <div class="shopname2">DIOR迪奥花漾星年</div>
+            <div class="shoping2">
+                <span class="iconfont icon-gouwudai" id="buy">
+                    <span class="buy2">订购</span>
+                </span>
+            </div>
+        </div>
+        <!-- 图片 -->
+        <div class="box-img">
+            <ul class="box-first">
+                <li><img src="../images/images/liebiao_03.gif" alt=""></li>
+                <li style="font-weight: 400">小号 Book Tote 手袋</li>
+                <li>米色 Dior Hibiscus 刺绣帆布</li>
+                <li>¥26,500</li>
+            </ul>
+            <ul>
+                <li><img src="../images/images/liebiao_05.gif" alt=""></li>
+                <li style="font-weight: 400">短袖衬衫</li>
+                <li>米色 Dior Hibiscus 印花薄纱图案</li>
+                <li>¥26,000</li>
+            </ul>
+            <ul>
+                <li><img src="../images/images/liebiao_07.gif" alt=""></li>
+                <li style="font-weight: 400">Dior Granville 草编鞋</li>
+                <li>米色 Dior Hibiscus 印花刺绣</li>
+                <li>¥6,700</li>
+            </ul>
+            <ul>
+                <li><img src="../images/images/liebiao_09.gif" alt=""></li>
+                <li style="font-weight: 400">Dior Hibiscus 手链</li>
+                <li>红色棉质和涂漆、金色饰面金属</li>
+                <li>¥3,100</li>
+            </ul>
+        </div>
+        <div class="box-img2">
+            <ul>
+                <li><img src="../images/images/liebiao_15.gif" alt=""></li>
+                <span>
+                    手提包
+                </span>
+            </ul>
+            <ul>
+                <li><img src="../images/images/liebiao_17.gif" alt=""></li>
+                <span>
+                    高级成衣
+                </span>
+            </ul>
+            <ul>
+                <li><img src="../images/images/liebiao_19.gif" alt=""></li>
+                <span>
+                    鞋履系列
+                </span>
+            </ul>
+            <ul>
+                <li><img src="../images/images/liebiao_21.gif" alt=""></li>
+                <span>
+                    时尚首饰
+                </span>
+            </ul>
+        </div>
+        <div id="box4">
+            <div id="images4">
+                <ul class="imgs4">
+                    <li><img src="../images/lunbo2.jpg" alt=""></li>
+                </ul>
+            </div>
+            <div id="box4">
+                <div class="shopname4">DIOR迪奥花漾星年</div>
+                <div class="shoping4">
+                    <span class="iconfont icon-gouwudai" id="buy">
+                        <span class="buy14">订购</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div id="box5">
+            <ul id="ulimg">
+                <li><img src="../images/images/liebiao_27.gif" alt=""></li>
+                <li><img src="../images/images/liebiao_28.gif" alt=""></li>
+                <li><img src="../images/images/second_16.gif" alt=""></li>
+            </ul>
+            <div class="shopname4">DIOR迪奥最新手袋系列</div>
+            <div class="shoping4">
+                <span class="iconfont icon-gouwudai" id="buy">
+                    <span class="buy14">订购</span>
+                </span>
+            </div>
+        </div>
+        <div class="box-img" style="margin-top: 230px;">
+            <ul class="box-first">
+                <li><img src="../images/images/four_03.gif" alt=""></li>
+                <li style="font-weight: 400">小号 Book Tote 手袋</li>
+                <li>米色 Dior Hibiscus 刺绣帆布</li>
+                <li>¥26,500</li>
+            </ul>
+            <ul>
+                <li><img src="../images/images/four_05.gif" alt=""></li>
+                <li style="font-weight: 400">短袖衬衫</li>
+                <li>米色 Dior Hibiscus 印花薄纱图案</li>
+                <li>¥26,000</li>
+            </ul>
+            <ul>
+                <li><img src="../images/images/four_07.gif" alt=""></li>
+                <li style="font-weight: 400">Dior Granville 草编鞋</li>
+                <li>米色 Dior Hibiscus 印花刺绣</li>
+                <li>¥6,700</li>
+            </ul>
+            <ul>
+                <li><img src="../images/images/four_09.gif" alt=""></li>
+                <li style="font-weight: 400">Dior Hibiscus 手链</li>
+                <li>红色棉质和涂漆、金色饰面金属</li>
+                <li>¥3,100</li>
+            </ul>
+        </div>
+        <div id="box5" style="margin: 10px auto 200px;">
+            <ul id="ulimg">
+                <li><img src="../images/images/five_03.gif" alt=""></li>
+                <li><img src="../images/images/five_04.gif" alt=""></li>
+                <li><img src="../images/images/second_16.gif" alt=""></li>
+            </ul>
+            <div class="shopname4">家居</div>
+            <div class="shoping4">
+                <span class="iconfont icon-gouwudai" id="buy">
+                    <span class="buy14">订购</span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- 精品店搜索栏 -->
+    <div id="store">
+        <img src="../images/STORE.jpg" alt="">
+        <div id="storelist">
+            <h2>精品店</h2>
+            <span class="sousu">
+                <input type="text" placeholder="城市、邮编、国家/地区" class="storetext">
+                <span class="iconfont icon-sousuo" id="sousu-fdj"></span>
+            </span>
+        </div>
+    </div>
+    </div>
+    <!-- 专享服务栏 -->
+    <div id="member">
+        <span class="bg"></span>
+        <div class="memberbox">
+            <span class="title">
+                <p>DIOR迪奥线上精品店专项服务</p>
+            </span>
+            <span class="fuwu">
+                <ul>
+                    <li class="iconfont icon-fanhui" id="tubiao"></li>
+                    <li>免费配送</li>
+                    <li style="font-size: 16px;">所有订单均享免费顺丰速递</li>
+                </ul>
+                <ul>
+                    <li class="iconfont icon-wuliupeisong-" id="tubiao"></li>
+                    <li>7天无理由退货</li>
+                    <li style="font-size: 16px;">非定制商品订单自签收日起7天内可享无理由退货</li>
+                </ul>
+                <ul>
+                    <li class="iconfont icon-huaban-" id="tubiao"></li>
+                    <li>艺术包装</li>
+                    <li style="font-size: 16px;">您的订单将尊享Dior迪奥艺术包装并随附个性化定制祝福</li>
+                </ul>
+            </span>
+        </div>
+    </div>
+    <!-- foot -->
+    <div id="end">
+        <ul class="end-left">
+            <li>电子通讯</li>
+            <li>立即订阅，掌握迪奥最新动态资讯</li>
+            <span class="sousu">
+                <input type="text" placeholder="输入您的邮箱" class="storetext">
+                <span id="sousu-fdj">确定</span>
+            </span>
+        </ul>
+        <ul class="end-center">
+            <li>联系</li>
+            <li>配送及退货</li>
+            <li>常见问题</li>
+            <li>一般销售条件</li>
+            <li>使用条款</li>
+            <li>数据保护章程</li>
+            <span class="end-span">
+                <li>
+                    <img src="../images/china-3.png" alt="">
+                    电子营业执照
+                </li>
+                <li>
+                    <img src="../images/china-0.png" alt="">
+                    沪公网安备3101060200034号
+                </li>
+                <li>
+                    <img src="../images/china-1.png" alt="">
+                    沪ICP备19005922号
+                </li>
+                <li>尚圃电子商务（上海）有限公司</li>
+                <li>上海市南京西路1266号恒隆广场1期29F </li>
+            </span>
+        </ul>
+        <ul class="end-right">
+            <li>关注我们</li>
+            <li>
+                <img src="../images/images/图标_03.gif" alt="">
+                <img src="../images/images/图标_05.gif" alt="">
+            </li>
+            <li>国家/地区</li>
+            <span class="sousu">
+                <input type="text" placeholder="请输入您的国家或地区" class="storetext">
+                <span id="sousu-fdj">确定</span>
+            </span>
+        </ul>
+    </div>
+</body>
+<script>
+    /* 二级导航 */
+    let second = document.getElementsByClassName("sort")
+    let secondlist = document.getElementById("secondlist")
+    for (let i = 0; i < second.length; i++) {
+        second[i].onmouseenter = function () {
+            secondlist.style.display = "flex"
+        }
+        second[i].onmouseleave = function () {
+            secondlist.style.display = "none"
+        }
+    }
+    let imglist=document.getElementsByTagName("img")
+    console.log(imglist)
+    for(let i=0;i<imglist.length;i++){
+        imglist[i].onclick=function(){
+            location.href="http://192.168.1.102/dior/index/xiangqing.html"
+        }
+    }
+</script>
+
+</html>
