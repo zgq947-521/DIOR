@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "13544024",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "18465122",
+      "name": "购物袋",
+      "font_class": "gouwudai",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "19009523",
+      "name": "爱心",
+      "font_class": "aixin",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    }
+  ]
+}
